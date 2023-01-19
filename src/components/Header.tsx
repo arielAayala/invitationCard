@@ -1,5 +1,3 @@
-import mariposa from "../assets/static/mariposa.png"
-
 export default function Header() {
     return(
     <div className="row d-flex justify-content-center align-items-center">
