@@ -20,9 +20,12 @@ body {
     color: #212529;
     text-align: left;
     background-color: rgb(255, 255, 255);
-    
+    background-image: url("../static/background.jpg");
+
 }
 
+
+/*header */
 .box-date-name h1{
     font-family: var(--fuente-1);
     font-size: 8rem;
@@ -43,6 +46,31 @@ span.fecha {
     font-size: 25px;
 }
 
+.frase h3{
+    margin: 4em 0 2.5em;
+    font-family: var(--fuente-2);
+    font-size: 1.5em;
+}
+.frase{
+    padding: 0 2em;
+}
+
+
+.scrolldown button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    margin: auto;
+}
+
+.scrolldown button img{
+    height: 5em;
+    width: 5em;
+}
 
 /* Mariposas */
 .box-mariposa{
@@ -107,8 +135,50 @@ span.fecha {
 }
 
 
-/* Mariposas */
+/* Counter */
 
 .box-counter{
     margin-top: 5em;
+}
+
+.counter-container{
+    border-radius: 50%;
+    border: 3px solid rgb(137, 0, 137);
+    padding: 1em 0 1.5em;
+    width: 35em;
+    height: 35em;
+    background-color: var(--color-5);
+}
+
+.counter-casilla{
+    border-radius: 5px;
+    border: 1.5px solid rgb(137, 0, 137);
+
+}
+
+
+/* Map */
+
+.box-map{
+    margin-top: 5em;
+    text-align: center;
+    font-family: var(--fuente-2);
+}
+
+.box-map button{
+    background: rgb(137, 0, 137);
+    color: white;
+    font-size: 1.1em;
+    padding: 0.3em;
+}
+
+
+.box-map iframe{
+    height: 20em;
+    width: 20em;
+    
+}
+
+.box-map button:hover{
+    border: 1px solid rgb(137, 0, 137);
 }

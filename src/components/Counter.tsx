@@ -5,14 +5,14 @@ export default function Counter() {
     const birthDayDate= new Date("April 08 2023")
 
     const [counter, setCounter] = useState({
-        days:"",
-        hours:"",
-        minutes:"",
-        seconds:""
+        days:"0",
+        hours:"0",
+        minutes:"0",
+        seconds:"0"
     })
 
     useEffect(()=>{
-        setInterval(()=>{
+        /* setInterval(()=>{
             let milliseconds =(birthDayDate.valueOf() - Date.now())
 
             let days= (Math.trunc(milliseconds/(1000*60*60*24))).toString()
@@ -32,7 +32,7 @@ export default function Counter() {
                 minutes:minutes,
                 seconds:seconds
             })
-        },1000)
+        },1000)  */
         
     })
 
@@ -40,20 +40,31 @@ export default function Counter() {
 
     return(
         <div className="box-counter">
-
             <div className="container text-center w-75">
-                <h3 className="mb-2">Faltan</h3>
-                <div className="row">
-                    <div className="col-3">{counter.days}</div>
-                    <div className="col-3">{counter.hours}</div>
-                    <div className="col-3">{counter.minutes}</div>
-                    <div className="col-3">{counter.seconds}</div>
-                </div>
-                <div className="row">
-                    <div className="col-3">Dias</div>
-                    <div className="col-3">Horas</div>
-                    <div className="col-3">Minutos</div>
-                    <div className="col-3">Segundos</div>
+                <div className="counter-container">
+                    <div className="row  mb-2">
+                        <div className="col-12">
+                            <h3 className="">Falta</h3>
+                        </div>
+                    </div>
+                    <div className="row justify-content-center gap-4">
+                        <div className="col-2  counter-casilla ">
+                            <h5>{counter.days}</h5>
+                            <h6>Dias</h6> 
+                        </div>
+                        <div className="col-2 counter-casilla">
+                            <h5>{counter.hours.length === 1? "0"+counter.hours  : counter.hours }</h5>
+                            <h6>Horas</h6> 
+                        </div>
+                        <div className="col-2 counter-casilla">
+                            <h5>{counter.minutes.length === 1? "0"+counter.minutes  : counter.minutes }</h5>
+                            <h6>Minutos</h6> 
+                        </div>
+                        <div className="col-2 counter-casilla">
+                            <h5>{counter.seconds.length === 1? "0"+counter.seconds  : counter.seconds }</h5>
+                            <h6>Segundos</h6> 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
