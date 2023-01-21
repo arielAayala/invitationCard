@@ -1,14 +1,14 @@
 import Header from './components/Header';
-import mariposa from "./assets/static/mariposa.png"
-import Contador from './components/Contador';
+import Counter from './components/Counter';
+import BackgroundHeader from './components/BackgroundHeader';
 
 function App() {
   return (
-    <body>
-      <img className='mariposa 1' src={mariposa}></img>
+    <div className="">
+      <BackgroundHeader></BackgroundHeader>
       <Header></Header>
-      <Contador></Contador>
-    </body>
+      <Counter></Counter>
+    </div>
   );
 }
 
