@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react"
-
+import flowersAnimation from "../assets/static/flowersAnimation.png"
 
 export default function Counter() {
     const birthDayDate= new Date("April 08 2023")
@@ -12,7 +12,9 @@ export default function Counter() {
     })
 
     useEffect(()=>{
-        /* setInterval(()=>{
+        console.log("load");
+        
+        /*  setInterval(()=>{
             let milliseconds =(birthDayDate.valueOf() - Date.now())
 
             let days= (Math.trunc(milliseconds/(1000*60*60*24))).toString()
@@ -32,41 +34,43 @@ export default function Counter() {
                 minutes:minutes,
                 seconds:seconds
             })
-        },1000)  */
-        
+        },1000) */   
     })
 
     
 
     return(
-        <div className="box-counter">
-            <div className="container text-center w-75">
-                <div className="counter-container">
-                    <div className="row  mb-2">
-                        <div className="col-12">
-                            <h3 className="">Falta</h3>
+        <>
+            <div className="box-counter" id="counter">
+                    <div className="counter-container container text-center">
+                        <div className="row mt-5">
+                            <div className="col-12">
+                                <h3 className="fs-1">Falta</h3>
+                            </div>
+                        </div>
+                        <div className="rows-casillas row gap-4">
+                            <div className="col-2  counter-casilla ">
+                                <h5>{counter.days}</h5>
+                                <h6>Dias</h6> 
+                            </div>
+                            <div className="col-2 counter-casilla">
+                                <h5>{counter.hours.length === 1? "0"+counter.hours  : counter.hours }</h5>
+                                <h6>Horas</h6> 
+                            </div>
+                            <div className="col-2 counter-casilla">
+                                <h5>{counter.minutes.length === 1? "0"+counter.minutes  : counter.minutes }</h5>
+                                <h6>Minutos</h6> 
+                            </div>
+                            <div className="col-2 counter-casilla">
+                                <h5>{counter.seconds.length === 1? "0"+counter.seconds  : counter.seconds }</h5>
+                                <h6>Segundos</h6> 
+                            </div>
                         </div>
                     </div>
-                    <div className="row justify-content-center gap-4">
-                        <div className="col-2  counter-casilla ">
-                            <h5>{counter.days}</h5>
-                            <h6>Dias</h6> 
-                        </div>
-                        <div className="col-2 counter-casilla">
-                            <h5>{counter.hours.length === 1? "0"+counter.hours  : counter.hours }</h5>
-                            <h6>Horas</h6> 
-                        </div>
-                        <div className="col-2 counter-casilla">
-                            <h5>{counter.minutes.length === 1? "0"+counter.minutes  : counter.minutes }</h5>
-                            <h6>Minutos</h6> 
-                        </div>
-                        <div className="col-2 counter-casilla">
-                            <h5>{counter.seconds.length === 1? "0"+counter.seconds  : counter.seconds }</h5>
-                            <h6>Segundos</h6> 
-                        </div>
-                    </div>
+                <div className="flowers">
+                    <img src={flowersAnimation} alt=""  />
                 </div>
             </div>
-        </div>
+        </>
     )
 }

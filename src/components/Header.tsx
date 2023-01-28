@@ -12,11 +12,11 @@ export default function Header() {
                     <h2>Mis 15 años</h2>
                 </div>
                 <div className="frase w-100 text-center">
-                    <h3 >Te espero para compartir la alegría de esa noche que será para mi mágica, inolvidable y única.</h3>
+                    <h3>Te espero para compartir la alegría de esa noche que será para mi mágica, inolvidable y única.</h3>
                 </div>
             </div>
             <div className="scrolldown w-100 text-center">
-                <button  type="button" title="scrollDown" ><img alt="" src={ScrollDown}></img></button>
+                <button  type="button" title="scrollDown" onClick={()=>{document.getElementById("counter")?.scrollIntoView() }}><img alt="" src={ScrollDown}></img></button>
             </div> 
         </div>
     )

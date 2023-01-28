@@ -1,9 +1,9 @@
 export default function Maps() {
     return(
-        <div className="box-map mb-5">
+        <div className="box-map ">
             <h2 className="mb-4">Complejos "Los Cocos"</h2>
 
-            <button type="button" className="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Como llegar
             </button>
 

@@ -2,7 +2,6 @@ import mariposa from "../assets/static/mariposa.png"
 import mariposa1 from "../assets/static/mariposa1.png"
 import mariposa2 from "../assets/static/mariposa2.png"
 export default function BackgroundHeader() {
-    
 
     return(
         <div className="box-mariposa">
