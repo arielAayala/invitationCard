@@ -215,7 +215,7 @@ span.fecha {
 /* Map */
 
 .box-map{
-    margin-top: 10em;
+    margin-top: 3em;
     text-align: center;
     font-family: var(--fuente-2);
 }
@@ -224,7 +224,7 @@ span.fecha {
     background: rgb(137, 0, 137);
     color: white;
     font-size: 1.1em;
-    padding: 0.3em;
+    padding: 0.3em 0.5em;
 }
 
 
@@ -234,6 +234,29 @@ span.fecha {
     
 }
 
+.box-map img{
+    height: 20em;
+    width: 20em;
+}
+
 .box-map button:hover{
     border: 1px solid rgb(137, 0, 137);
+}
+
+
+
+.box-map{
+    border-radius: 5px;
+    padding: 2em 0;
+    border: 2px solid rgb(137, 0, 137);
+}
+
+.box-cards{
+    text-align: center;
+    margin: 12em 0 10em;
+}
+
+.detail{
+    font-family: var(--fuente-1);
+    font-size: 3em;
 }

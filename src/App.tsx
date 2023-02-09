@@ -1,7 +1,8 @@
 import Header from './components/Header';
 import Counter from './components/Counter';
 import BackgroundHeader from './components/BackgroundHeader';
-import Maps from './components/Maps';
+import Cards from './components/Cards';
+import Confirm from './components/Confirm';
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <BackgroundHeader></BackgroundHeader>
       <Header></Header>
       <Counter></Counter>
-      <Maps></Maps>
+      <Cards></Cards>
+      <Confirm></Confirm>
     </>
   );
 }
