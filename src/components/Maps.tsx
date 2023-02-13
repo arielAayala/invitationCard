@@ -2,7 +2,7 @@ export default function Maps() {
     return(
         <div className="box-map">
             <h2 className="mb-4">Ubicación</h2>
-
+            <i className="fi fi-rs-marker"></i>
             <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#modalMap">
             Como llegar
             </button>

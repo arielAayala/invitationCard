@@ -237,6 +237,7 @@ span.fecha {
 .box-map img{
     height: 20em;
     width: 20em;
+    object-fit: fill;
 }
 
 .box-map button:hover{
@@ -260,3 +261,35 @@ span.fecha {
     font-family: var(--fuente-1);
     font-size: 3em;
 }
+
+.box-confirm{
+    text-align: center;
+    margin: 5em 0;
+}
+
+.box-confirm form{
+    margin-top: 4em;
+}
+
+.box-confirm form input{
+    width: 20em;
+    margin: auto;
+    text-align: center;
+    border: 1px solid rgb(137, 0, 137)
+}
+
+.box-confirm form button{
+    width: 20em;
+    margin: auto;
+    margin-top: 0.5em;
+    text-align: center;
+    background-color: rgb(137, 0, 137);
+    color: white;
+}
+
+.box-confirm form button:hover{
+    border: 1px solid rgb(137, 0, 137)
+}
+
+
+
