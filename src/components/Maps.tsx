@@ -1,8 +1,11 @@
+import maps from "../assets/static/ubicacion.gif"
+
 export default function Maps() {
     return(
         <div className="box-map">
             <h2 className="mb-4">Ubicación</h2>
-            <i className="fi fi-rs-marker"></i>
+            <img src={maps} alt="" className="gif" />
+            <br></br>
             <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#modalMap">
             Como llegar
             </button>

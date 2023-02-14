@@ -4,7 +4,7 @@ export default function Confirm(){
 
     const[input, setInput]= useState("")
 
-    const handleSubmit = (e:FormEvent) =>{
+    const handleSubmit = (e:FormEvent<HTMLFormElement>) =>{
         e.preventDefault()
         try {
             setNewConfirmation(input)

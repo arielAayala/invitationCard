@@ -3,6 +3,7 @@ import Counter from './components/Counter';
 import BackgroundHeader from './components/BackgroundHeader';
 import Cards from './components/Cards';
 import Confirm from './components/Confirm';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Counter></Counter>
       <Cards></Cards>
       <Confirm></Confirm>
+      <Footer></Footer>
     </>
   );
 }

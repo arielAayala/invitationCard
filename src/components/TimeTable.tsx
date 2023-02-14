@@ -1,8 +1,11 @@
+import horario from "../assets/static/medianoche.gif"
 export default function TimeTable() {
     return(
         <div className="box-map">
             <h2 className="mb-4">Horario</h2>
 
+            <img src={horario} alt="" className="gif" />
+            <br />
             <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#modalTime">
             + Info
             </button>

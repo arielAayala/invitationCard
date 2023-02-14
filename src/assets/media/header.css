@@ -250,7 +250,10 @@ span.fecha {
     border-radius: 5px;
     padding: 2em 0;
     border: 2px solid rgb(137, 0, 137);
+    background-color: #fff;
 }
+
+
 
 .box-cards{
     text-align: center;
@@ -291,5 +294,47 @@ span.fecha {
     border: 1px solid rgb(137, 0, 137)
 }
 
+.box-map .gif {
+    height: 8em;
+    width: 8em;
+    margin-bottom: 3em;
+}
 
+.box-footer{
+    background-color: rgb(137, 0, 137);
+    clear: both;
+    position: relative;
+    margin-top: 5em;
+}
+
+.box-footer{
+    background-color: rgb(137, 0, 137);
+    clear: both;
+    position: relative;
+    margin-top: 12em;
+    color: white;
+    padding-top: 1em;
+}
+
+.box-footer h3{
+    font-size: 1em;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+li{
+    list-style-type: none;
+    font-size: 0.75em;
+    text-align: center;
+}
+.box-footer .waves{
+    position: absolute;
+    z-index: -1;
+    top: -200px;
+}
 
