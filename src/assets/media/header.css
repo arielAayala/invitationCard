@@ -27,6 +27,8 @@ body {
 
 
 /*header */
+
+
 .box-date-name h1{
     font-family: var(--fuente-1);
     font-size: 8rem;
@@ -75,9 +77,9 @@ span.fecha {
 
 /* Mariposas */
 .box-mariposa{
-    position: relative;
+    position: absolute;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     height: 500px
 }
 
@@ -136,7 +138,7 @@ span.fecha {
 }
 
 .box-header{
-    margin-top: -25em;
+    padding-top: 5em;
 }
 
 
@@ -177,40 +179,6 @@ span.fecha {
     font-size: 1.6em;
 }
 
-/* Animation flowers */
-
-.flowers{
-    position:absolute;
-    height: 100%;
-    width: 100%;
-    align-content: center;
-    top: 635px;
-    overflow: hidden;
-}
-
-.flowers img{
-    position: absolute;
-    z-index: -10;
-    width: 55em;
-    height: 100%;
-    left: 50%;
-    margin-left: -27.5em;
-    right: 50%;
-    margin-right: -27.5em;
-
-    animation-name: flowerAnimation;
-    animation-duration: 3s;
-}
-
-@keyframes flowerAnimation {
-    from{
-        opacity: 0;
-    }
-
-    to{
-        opacity: 1;
-    }
-}
 
 /* Map */
 
@@ -314,6 +282,7 @@ span.fecha {
     margin-top: 12em;
     color: white;
     padding-top: 1em;
+    height: 10em;
 }
 
 .box-footer h3{
@@ -335,6 +304,148 @@ li{
 .box-footer .waves{
     position: absolute;
     z-index: -1;
-    top: -200px;
+    bottom: 5em;
 }
 
+.box-music{
+    border: 3px solid rgb(137, 0, 137);
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    height: 4em;
+    width: 4em;
+    background-color: white;
+    z-index: 100;
+}
+
+.box-music:hover{
+    cursor: pointer;
+}
+
+.box-music img{
+    height: 3.4em;
+    width: 3.4em;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+.box-loading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box-loading img{
+    height: 9em;
+    width: 9em;
+    padding: 0.5em;
+}
+
+
+.box-app{
+    visibility: visible;
+}
+
+.box-ask{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.box-ask button{
+    width: 12em;
+    margin: auto;
+    margin-top: 0.5em;
+    text-align: center;
+    background-color: rgb(137, 0, 137);
+    color: white;
+}
+
+.box-ask button:hover{
+    border: 1px solid rgb(137, 0, 137)
+}
+
+/*media querys*/
+
+
+@media only screen and (max-width:768px) and (min-width:425px) {
+    .box-ask button{
+        width: 7.2em;
+        font-size: 0.6em;
+    }
+
+    .mariposa{
+        height: 7.5em;
+        width:7.5em;
+    }
+
+    .box-mariposa{
+        height: 200px;
+    }
+
+    .box-header h3{
+        font-size: 1em;
+    }
+
+    .counter-container{
+        height: 25em;
+        width: 25em;
+    }
+    .rows-casillas{
+        margin-top: 4em;
+    }
+    .box-footer .waves{
+        position: absolute;
+        z-index: -1;
+        bottom: 6em;
+    }
+}
+
+
+@media only screen and  (max-width:425px) {
+    .box-ask button{
+        width: 7.2em;
+        font-size: 0.6em;
+    }
+
+    .mariposa{
+        height: 6em;
+        width:6em;
+    }
+
+    .box-header{
+        padding-top: 7em;
+    }
+
+    .box-header h3{
+        font-size: 1em;
+    }
+
+    .box-header h1{
+        font-size: 4em;
+    }
+
+    .box-header h2{
+        font-size: 1.5em;
+    }
+
+    .counter-container{
+        height: 20em;
+        width: 20em;
+    }
+
+    .counter-container h6{
+        font-size: 0.7em;
+    }
+    .rows-casillas{
+        margin-top: 2em;
+    }
+    .box-footer .waves{
+        position: absolute;
+        z-index: -1;
+        bottom: 9em;
+    }
+}

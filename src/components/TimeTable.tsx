@@ -14,7 +14,7 @@ export default function TimeTable() {
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h3 className="modal-title fs-5" id="exampleModalLabel">Elegante sport</h3>
+                            <h3 className="modal-title fs-5" id="exampleModalLabel">Horario</h3>
                             <button type="button" className="btn" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
                         </div>
                         <div className="modal-body">
