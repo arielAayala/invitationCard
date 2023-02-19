@@ -11,7 +11,7 @@ export default function Counter() {
     })
 
     useEffect(()=>{
-        /* setInterval(()=>{
+        setInterval(()=>{
             let milliseconds =(birthDayDate.valueOf() - Date.now())
 
             let days= (Math.trunc(milliseconds/(1000*60*60*24))).toString()
@@ -31,7 +31,7 @@ export default function Counter() {
                 minutes:minutes,
                 seconds:seconds
             })
-        },1000)   */
+        },1000)   
     })
 
     

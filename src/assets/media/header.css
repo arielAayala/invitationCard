@@ -383,7 +383,7 @@ li{
     }
 
     .box-mariposa{
-        height: 200px;
+        height: 250px;
     }
 
     .box-header h3{
@@ -407,13 +407,17 @@ li{
 
 @media only screen and  (max-width:425px) {
     .box-ask button{
-        width: 7.2em;
-        font-size: 0.6em;
+        width: 5.5em;
+        font-size: 0.85em;
     }
 
     .mariposa{
         height: 6em;
         width:6em;
+    }
+
+    .box-mariposa{
+        height: 250px;
     }
 
     .box-header{
