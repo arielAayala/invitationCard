@@ -457,7 +457,7 @@ li{
     background: url("../static/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 125% 100%;
     position: fixed;
     height: 100vh;
     width: 100vw;
