@@ -3,7 +3,7 @@ import music from "../assets/static/musica-alternativa.png"
 
 export default function Music({propsAudio, propsBool}:any){
 
-    propsAudio.volume = 0.25
+    propsAudio.volume = 0.5
 
     const [playing, setPlaying] = useState(propsBool)
 

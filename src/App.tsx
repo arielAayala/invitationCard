@@ -31,11 +31,12 @@ function App() {
   })
   
 
-  if (loading) return <Loading></Loading>
+  if (loading) return <><div className='box-bg'></div><Loading></Loading></>
 
 
   if (ask)  return(
     <>
+    <div className='box-bg'></div>
     <div className='box-ask '>
         <div className="container text-center w-50">
             <div className="row ">
@@ -53,6 +54,7 @@ function App() {
 
   return (
     <>
+      <div className='box-bg'></div>
       <div id='app' className='box-app'>
         <Music propsAudio={audio} propsBool={bool}></Music>
         <BackgroundHeader></BackgroundHeader>
