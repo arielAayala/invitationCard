@@ -4,8 +4,8 @@
     --color-3: #767b35;
     --color-4: #f5f5f5;
     --color-5: #fff;
-    --fuente-1: 'Cookie', cursive;
-    --fuente-2: 'Open Sans', sans-serif;
+    --fuente-1: 'rubik iso', cursive;
+    --fuente-2: 'Titillium Web', sans-serif;
     --weight-font-regular: 400;
     --weight-font-bold: 700;
     
@@ -26,6 +26,29 @@ body {
 
 /*header */
 
+.box-header{
+    height: 100vh;
+    padding-top: 2em;
+    animation-name: headerAnimation;
+    animation-duration: 1s;
+}
+
+
+
+.box-header-border{
+    margin: auto;  
+    background-color: white;
+    border: 5px solid red;
+    border-radius: 30px;
+    width: 75%;
+    height: 75%;
+    padding-top: 2em;
+    background-image: url("../static/marioHeader.png");
+    background-repeat: no-repeat;
+    background-size: 45% 45%;
+    background-position: 50% 100%;
+}
+
 
 .box-date-name h1{
     font-family: var(--fuente-1);
@@ -34,6 +57,7 @@ body {
 
 .box-date-name h2{
     font-size: 2rem;
+    font-family: var(--fuente-2);
 }
 
 span.fecha {
@@ -44,24 +68,17 @@ span.fecha {
     white-space: nowrap;
     width: 100%;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 20px;
 }
 
-.frase h3{
-    margin: 4em 0 2.5em;
-    font-family: var(--fuente-2);
-    font-size: 1.2em;
+.scrolldown{
+    margin-top: 3em;
 }
-.frase{
-    padding: 0 2em;
-}
-
 
 .scrolldown button{
     background: none;
 	color: inherit;
 	border: none;
-	padding: 0;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
@@ -69,91 +86,26 @@ span.fecha {
 }
 
 .scrolldown button img{
-    height: 5em;
-    width: 5em;
-}
-
-/* Mariposas */
-.box-mariposa{
-    position: absolute;
-    width: 100%;
-    overflow-x: hidden;
-    height: 500px
-}
-
-
-.mariposa{
-    position:absolute;
-    width: min-content;
-    height: 8.5em;
-    width:8.5em;
-    animation-name: mariposaAnimation;
-    animation-duration: 3s;
-}
-
-@keyframes mariposaAnimation {
-    from{
-        opacity: 0;
-        height: 12em;
-        width:12em;
-    }
-
-    to{
-        opacity: 1;
-    }
-}
-
-.m1{
-    left: 110px;
-    top: -10px;
-    transform: rotate(20deg); 
-}
-.m2{
-    left: 40px;
-    top: 30px;
-    transform: rotate(320deg); 
-}
-.m3{
-    left: -50px;
-    top: 90px;
-    transform: rotate(30deg);
-}
-.m4{
-    top: 40px;
-    right: 40px;
-    transform: rotate(20deg);
-}
-.m5{
-    right: -20px;
-    top: 90px;
-    transform: rotate(320deg);
-}
-
-.m6{
-    top: -20px;
-    right: 95px;
-    transform: rotate(330deg);
-}
-
-.box-header{
-    padding-top: 5em;
+    height: 3.5em;
+    width: 3.5em;
 }
 
 
 /* Counter */
 
 .box-counter{
-    margin-top: 5em;
-    padding-top: 3em;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .counter-container{
-    border-radius: 50%;
-    border: 3px solid rgb(137, 0, 137);
+    border-radius: 30px;
+    border: 3px solid red;
     width: 30em;
     height: 30em;
     background-color: var(--color-5);
-    margin: 0 auto;
+    font-family: var(--fuente-2);
 }
 
 .rows-casillas{
@@ -165,16 +117,18 @@ span.fecha {
 
 .counter-casilla{
     border-radius: 5px;
-    border: 1.5px solid rgb(137, 0, 137);
+    border: 1.5px solid red;
     padding: 1em 0;
 }
 
 .counter-casilla h6{
     font-size: 0.75em;
+    font-family: var(--fuente-2);
 }
 
 .counter-casilla h5{
     font-size: 1.6em;
+    font-family: var(--fuente-1);
 }
 
 
@@ -187,7 +141,7 @@ span.fecha {
 }
 
 .box-map button{
-    background: rgb(137, 0, 137);
+    background: red;
     color: white;
     font-size: 1.1em;
     padding: 0.3em 0.5em;
@@ -207,7 +161,7 @@ span.fecha {
 }
 
 .box-map button:hover{
-    border: 1px solid rgb(137, 0, 137);
+    border: 1px solid red;
 }
 
 
@@ -215,7 +169,7 @@ span.fecha {
 .box-map{
     border-radius: 5px;
     padding: 2em 0;
-    border: 2px solid rgb(137, 0, 137);
+    border: 2px solid red;
     background-color: #fff;
 }
 
@@ -223,7 +177,7 @@ span.fecha {
 
 .box-cards{
     text-align: center;
-    margin: 12em 0 10em;
+
 }
 
 .detail{
@@ -233,7 +187,11 @@ span.fecha {
 
 .box-confirm{
     text-align: center;
-    margin: 5em 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fuente-2);
 }
 
 .box-confirm form{
@@ -244,7 +202,7 @@ span.fecha {
     width: 20em;
     margin: auto;
     text-align: center;
-    border: 1px solid rgb(137, 0, 137)
+    border: 1px solid red
 }
 
 .box-confirm form button{
@@ -252,12 +210,12 @@ span.fecha {
     margin: auto;
     margin-top: 0.5em;
     text-align: center;
-    background-color: rgb(137, 0, 137);
+    background-color: red;
     color: white;
 }
 
 .box-confirm form button:hover{
-    border: 1px solid rgb(137, 0, 137)
+    border: 1px solid red;
 }
 
 .box-map .gif {
@@ -266,47 +224,28 @@ span.fecha {
     margin-bottom: 3em;
 }
 
-.box-footer{
-    background-color: rgb(137, 0, 137);
-    clear: both;
-    position: relative;
-    margin-top: 5em;
-}
 
 .box-footer{
-    background-color: rgb(137, 0, 137);
-    clear: both;
+    background-color: transparent;
     position: relative;
-    margin-top: 12em;
-    color: white;
-    padding-top: 1em;
-    height: 10em;
+    color:  black;
+    bottom: 1em;
 }
 
 .box-footer h3{
-    font-size: 1em;
+    font-size: 1.3em;
     text-align: center;
+    font-family: var(--fuente-2);
 }
 
 a{
     text-decoration: none;
-    color: white;
-    
+    color: black;   
 }
 
-li{
-    list-style-type: none;
-    font-size: 0.75em;
-    text-align: center;
-}
-.box-footer .waves{
-    position: absolute;
-    z-index: -1;
-    bottom: 5em;
-}
 
 .box-music{
-    border: 3px solid rgb(137, 0, 137);
+    border: 2px solid red;
     border-radius: 50%;
     position: fixed;
     right: 10px;
@@ -332,37 +271,34 @@ li{
 .box-loading{
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    top: 80%;
+    transform: translate(-45%,-50%);
 }
 
 .box-loading img{
-    height: 9em;
-    width: 9em;
+    height: 10em;
+    width: 10em;
     padding: 0.5em;
 }
 
 
-.box-app{
-    visibility: visible;
-}
-
 .box-ask{
     width: 100%;
     position: absolute;
-    top: 50%;
+    top: 25%;
+    left: 2%;
+    font-family: var(--fuente-2);
 }
 
-.box-ask button{
-    width: 12em;
+.box-ask  button{
+    width: 50em;
     margin: auto;
-    margin-top: 0.5em;
     text-align: center;
-    background-color: rgb(137, 0, 137);
+    background-color: rgb(173, 4, 4);
     color: white;
 }
 
-.box-ask button:hover{
+.box-ask  button:hover{
     border: 1px solid rgb(137, 0, 137)
 }
 
@@ -375,14 +311,6 @@ li{
         font-size: 0.6em;
     }
 
-    .mariposa{
-        height: 7.5em;
-        width:7.5em;
-    }
-
-    .box-mariposa{
-        height: 250px;
-    }
 
     .box-header h3{
         font-size: 1em;
@@ -409,18 +337,6 @@ li{
         font-size: 0.85em;
     }
 
-    .mariposa{
-        height: 6em;
-        width:6em;
-    }
-
-    .box-mariposa{
-        height: 250px;
-    }
-
-    .box-header{
-        padding-top: 7em;
-    }
 
     .box-header h3{
         font-size: 1em;

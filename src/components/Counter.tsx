@@ -64,9 +64,6 @@ export default function Counter() {
                             </div>
                         </div>
                     </div>
-                {/* <div className="flowers">
-                    <img src={flowersAnimation} alt=""  />
-                </div> */}
             </div>
         </>
     )
