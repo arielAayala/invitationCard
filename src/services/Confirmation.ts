@@ -1,5 +1,5 @@
 import db from "./firebase";
-import {DocumentData, QuerySnapshot, addDoc,collection, getDocs} from "firebase/firestore"
+import { addDoc,collection, getDocs} from "firebase/firestore"
 
 /**
  * 

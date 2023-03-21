@@ -29,8 +29,6 @@ body {
 .box-header{
     height: 100vh;
     padding-top: 2em;
-    animation-name: headerAnimation;
-    animation-duration: 1s;
 }
 
 
@@ -154,11 +152,6 @@ span.fecha {
     
 }
 
-.box-map img{
-    height: 20em;
-    width: 20em;
-    object-fit: fill;
-}
 
 .box-map button:hover{
     border: 1px solid red;
@@ -199,14 +192,14 @@ span.fecha {
 }
 
 .box-confirm form input{
-    width: 20em;
+    width: 18em;
     margin: auto;
     text-align: center;
     border: 1px solid red
 }
 
 .box-confirm form button{
-    width: 20em;
+    width: 18em;
     margin: auto;
     margin-top: 0.5em;
     text-align: center;
@@ -286,12 +279,11 @@ a{
     width: 100%;
     position: absolute;
     top: 25%;
-    left: 2%;
     font-family: var(--fuente-2);
 }
 
 .box-ask  button{
-    width: 50em;
+    width: 45em;
     margin: auto;
     text-align: center;
     background-color: rgb(173, 4, 4);
@@ -323,11 +315,7 @@ a{
     .rows-casillas{
         margin-top: 4em;
     }
-    .box-footer .waves{
-        position: absolute;
-        z-index: -1;
-        bottom: 6em;
-    }
+    
 }
 
 
@@ -361,11 +349,8 @@ a{
     .rows-casillas{
         margin-top: 2em;
     }
-    .box-footer .waves{
-        position: absolute;
-        z-index: -1;
-        bottom: 9em;
-    }
+    
+
 }
 
 
@@ -378,4 +363,17 @@ a{
     height: 100vh;
     width: 100vw;
     z-index: -100;
+  }
+
+
+  @media only screen and  (max-width:320px) {
+    
+    .box-date-name h1{
+        font-size: 2.5rem;
+    }
+
+    .box-date-name h2{
+        font-size: 1.2rem;
+    }
+
   }

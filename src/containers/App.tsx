@@ -9,7 +9,7 @@ import Loading from '../components/Loading';
 
 function App() {
 
-  const audio = new Audio(require("../assets/audios/Taylor Swift - Style (Audio).mp3"))
+  const audio = new Audio(require("../assets/audios/Happy Birthday Mario Song.mp3"))
 
   const [loading,setLoading] =useState("d-none")
   const [ask, setAsk] = useState(true)

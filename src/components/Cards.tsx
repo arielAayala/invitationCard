@@ -8,14 +8,14 @@ export default function Cards() {
         <div className="box-cards">
             <h2 className="detail">Detalles</h2>
             <div className="container">
-                <div className="row gap-4">
-                    <div className="col">
+                <div className="row ">
+                    <div className="col-6">
                         <Maps></Maps>
                     </div>
-                    <div className="col">
+                    <div className="col-6">
                         <TimeTable></TimeTable>
                     </div>
-                    <div className="col">
+                    <div className="col-12">
                         <Style></Style>
                     </div>
                 </div>

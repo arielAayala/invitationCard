@@ -14,7 +14,7 @@ export default function Maps() {
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h3 className="modal-title fs-5" id="exampleModalLabel">Complejos "Los Cocos"</h3>
+                            <h3 className="modal-title fs-5" id="exampleModalLabel">Avenida Pueyrredón 355</h3>
                             <button type="button" className="btn" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
                         </div>
                         <div className="modal-body">

@@ -1,7 +1,7 @@
 import { useState,useEffect } from "react"
 
 export default function Counter() {
-    const birthDayDate= new Date("April 08 2023")
+    const birthDayDate= new Date("April 01 2023")
 
     const [counter, setCounter] = useState({
         days:"0",

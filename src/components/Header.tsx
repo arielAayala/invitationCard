@@ -10,7 +10,7 @@ export default function Header() {
                             {process.env.REACT_APP_FECHA}
                         </span>
                         <h1>{process.env.REACT_APP_NOMBRE}</h1>
-                        <h2>Mis 15 años</h2>
+                        <h2>Festejemos mis 11 años</h2>
                     </div> 
                 </div>
             </div>
