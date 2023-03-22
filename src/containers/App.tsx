@@ -14,40 +14,54 @@ function App() {
   const [loading,setLoading] =useState("d-none")
   const [ask, setAsk] = useState(true)
   const [bool , setBool] = useState(false) 
+  const [animation, setAnimation] = useState(false)
 
   const handleBoolFalse = () =>{
-    setBool(false)
-    setAsk(false)
+    setAnimation(true)
+    setTimeout(()=>{
+      setAnimation(false)
+      setBool(false)
+      setAsk(false) 
+    },700)
+
   }
   const handleBoolTrue = () =>{
-    setBool(true)
-    setAsk(false)
+    setAnimation(true)
+    setTimeout(()=>{
+      setAnimation(false)
+      setBool(true)
+      setAsk(false) 
+    },700)
   }
 
   useEffect(()=>{
     setTimeout(() => setLoading("d-block"),3000)  
   })
-  
-
 
   if (ask)  return(
     <>
-    <div className='box-bg'></div>
-    <div className={'box-ask '+loading}>
-        <div className="container text-center w-50">
-            <div className="row ">
-                <div className="col-6">
-                    <button className='btn' type='button' onClick={handleBoolTrue}>Ingresar con Musica</button>
-                </div>
-                <div className="col-6">
-                    <button className='btn' type='button' onClick={handleBoolFalse}>Ingresar sin Musica</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <Loading></Loading>
+      <div className='box-bg'></div>
+      <div className={(animation? "box-animation": 'box-ask '+loading )}>
+          <div className="container text-center w-50 ">
+              <div className={"row "  }>
+                  {
+                    animation? <div className='col-12'></div> :(
+                      <>
+                        <div className="col-6">
+                            <button className='btn' type='button' onClick={handleBoolTrue}>Ingresar con Musica</button>
+                        </div>
+                        <div className="col-6">
+                            <button className='btn' type='button' onClick={handleBoolFalse}>Ingresar sin Musica</button>
+                        </div>
+                      </>
+                    )
+                  }
+              </div>
+          </div>
+      </div>
+      <Loading></Loading>
     </>
-)
+  )
 
   return (
     <>

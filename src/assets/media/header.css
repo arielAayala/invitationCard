@@ -173,6 +173,10 @@ span.fecha {
 
 }
 
+.box-cards h2{
+    color: black;
+}
+
 .detail{
     font-family: var(--fuente-1);
     font-size: 3em;
@@ -294,6 +298,50 @@ a{
     border: 1px solid rgb(137, 0, 137)
 }
 
+.box-bg {    
+    background: url("../static/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 125% 100%;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -100;
+}
+
+.box-guess{
+    text-align: center;
+    background: url("../static/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 125% 100%;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -100;
+}
+
+.container-guess{
+    background-color: white;
+    border: 2px solid  rgb(173, 4, 4);
+    border-radius: 30px;
+    margin: auto;
+    height: 85%;
+    width: 85%;
+    margin-top: 2em;
+    overflow-y: scroll;
+}
+
+.container-guess h1{
+    font-size: 1.5em;
+    font-family: var(--fuente-1);
+}
+
+.container-guess h3{
+    font-size: 1.2em;
+    font-family: var(--fuente-2);
+}
+
 /*media querys*/
 
 
@@ -304,8 +352,12 @@ a{
     }
 
 
-    .box-header h3{
-        font-size: 1em;
+    .box-header h1{
+        font-size: 3em;
+    }
+
+    .box-header h2{
+        font-size: 1.5em;
     }
 
     .counter-container{
@@ -353,17 +405,6 @@ a{
 
 }
 
-
-.box-bg {    
-    background: url("../static/background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 125% 100%;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    z-index: -100;
-  }
 
 
   @media only screen and  (max-width:320px) {

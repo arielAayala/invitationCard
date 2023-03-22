@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './containers/App';
 import "./assets/media/header.css"
+import "./assets/media/animation.css"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Confirmados from './containers/Confirmados';
 
